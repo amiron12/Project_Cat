@@ -79,7 +79,7 @@ def ending(playerGroup):
         case 1: setup() #starting a new game
         case 2: exit()
         case 3:
-            playerGroup.showPlayers()
+            playerGroup.showPlayers() #ends the game as well
             exit()
 
 
