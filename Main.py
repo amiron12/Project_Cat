@@ -79,6 +79,7 @@ def ending(playerGroup):
         case 1: setup() #starting a new game
         case 2: exit()
         case 3:
+            print("pupik")
             playerGroup.showPlayers()
             exit()
 
