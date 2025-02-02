@@ -62,7 +62,7 @@ def ending(playerGroup):
     length = len(lead)
     match length:
          case 1: #checking if there is only one winner or ties
-            print(f"The winner is {lead[0].playerName} with: {lead[0].cards()}")
+            print(f"The winnr is {lead[0].playerName} with: {lead[0].cards()}")
          case 2:
             print(f"The tied winners are {lead[0].playerName} with: {lead[0].cards()}, and {lead[1].playerName} with: {lead[1].cards()}")
          case 3:
@@ -79,6 +79,7 @@ def ending(playerGroup):
         case 1: setup() #starting a new game
         case 2: exit()
         case 3:
+            print("pupik")
             playerGroup.showPlayers()
             exit()
 
