@@ -78,7 +78,9 @@ def ending(playerGroup):
     match choice:
         case 1: setup() #starting a new game
         case 2: exit()
-        case 3: playerGroup.showPlayers()
+        case 3:
+            playerGroup.showPlayers()
+            exit()
 
 
 setup() # * Game Start *

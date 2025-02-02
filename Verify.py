@@ -24,7 +24,7 @@ def nameVer():
             return nameVer()
         else:
             return name
-
+'''
 def choiceVer(num)->int:
     try:
         choice = int(input())
@@ -38,4 +38,16 @@ def choiceVer(num)->int:
         else:
             errorPrint()
             return choiceVer(num)
+'''
 
+def choiceVer(num) -> int:
+    choice = None  # Initialize choice
+    while True:  # Loop to keep trying until a valid choice is made
+        try:
+            choice = int(input())
+            if options(num, choice):
+                return choice
+            else:
+                errorPrint()
+        except ValueError:  # Catch non-integer input
+            errorPrint()
